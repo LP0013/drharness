@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dr. Harness</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="header-menu">
+            <nav>
+                <ul class="header-menu-list">
+                    <li>Каталог</li>
+                    <li>Приимущества</li>
+                    <li>Отзывы</li>
+                    <li>Как заказать</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="main-top">
+        <div class="container">
+            <div class="main-top-top-text">
+                <h1>Женские кожаные партупеи <br><span class="main-top-top-text-span">Dr.Harness</span></h1>
+            </div>
+            <div class="line"></div>
+            <div class="main-top-bottom-text">
+                <p>любая модель со скидкой 50% <br><span class="main-top-bottom-text-span">всего за 2990руб</span></p>
+            </div>
+            <div class="main-top-buttons">
+                <button class="catalog-nav-item" data-tab="daily">Повседневые портупеи</button>
+                <button class="catalog-nav-item" data-tab="ero">Эроптические портупеи</button>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div>
+                <h2>Хит №1 в мире – модные жеские портупеи</h2>
+                <div class="black-line"></div>
+            </div>
+            <div class="about-text">
+                <p>Как и все кожаные аксессуары, портупея находится сегодня на пике востребованности в мире моды, даря
+                    своей обладательнице внимание и уверенность в себе. </p>
+                <p>Многообразие видов портупей – это как Характер каждой девушки: от портупеи из тонких ремешков для
+                    романтичных и женственных натур, до сложных сплетений из средних и широких - для дерзких и
+                    раскрепощенных. </p>
+            </div>
+        </div>
+        <img src="images/photoline.jpg" alt="">
+    </section>
+    <section class="sizes">
+        <div class="container">
+            <div>
+                <h2>Таблица Размеров</h2>
+            </div>
+            <div class="black-line"></div>
+            <div class="sizes-table">
+                <table>
+                    <tr>
+                        <td>Международный</td>
+                        <td>XS</td>
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                        <td>XXL</td>
+                    </tr>
+                    <tr>
+                        <td>Российский</td>
+                        <td>40</td>
+                        <td>42</td>
+                        <td>44/46</td>
+                        <td>48/50</td>
+                        <td>52/54</td>
+                        <td>56</td>
+                    </tr>
+                    <tr>
+                        <td>Бедра(см)</td>
+                        <td>84-92</td>
+                        <td>92-95</td>
+                        <td>96-101</td>
+                        <td>102-108</td>
+                        <td>109-116</td>
+                        <td>117-121</td>
+                    </tr>
+                    <tr>
+                        <td>Талия(см)</td>
+                        <td>60-65</td>
+                        <td>66-69</td>
+                        <td>70-77</td>
+                        <td>78-85</td>
+                        <td>86-95</td>
+                        <td>96-102</td>
+                    </tr>
+                    <tr>
+                        <td>Грудь(см)</td>
+                        <td>74-80</td>
+                        <td>82-85</td>
+                        <td>86-93</td>
+                        <td>94-102</td>
+                        <td>103-113</td>
+                        <td>114-119</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <div>
+                <h2>Каталог</h2>
+                <div class="black-line"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="catalog-top-buttons">
+                <button class="catalog-nav-item nav-btn-active" data-tab="daily">Повседневые портупеи</button>
+                <button class="catalog-nav-item" data-tab="ero">Эроптические портупеи</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="catalog-items tab-active" data-tab="daily">
+
+            </div>
+            <div class="catalog-items" data-tab="ero">
+
+            </div>
+        </div>
+        <template id="catalog-item">
+            <div class="catalog-item-card">
+                <div class="card-image">
+                    <img src="" alt="item-image">
+                </div>
+                <div class="sale">
+                    <span>-53%</span>
+                </div>
+                <div class="card-main">
+                    <h3 class="card-item-name">Портупея "Пеппи"</h3>
+                    <div class="card-sizes">
+                        <label class="size-item">
+                            <input type="radio" name="size" value="xs" class="size-item-input">
+                            <span class="size-item-text">XS</span>
+                        </label>
+                        <label class="size-item">
+                            <input type="radio" name="size" value="s" class="size-item-input">
+                            <span class="size-item-text">S</span>
+                        </label>
+                        <label class="size-item">
+                            <input type="radio" name="size" value="m" class="size-item-input">
+                            <span class="size-item-text">M</span>
+                        </label>
+                        <label class="size-item">
+                            <input type="radio" name="size" value="l" class="size-item-input">
+                            <span class="size-item-text">L</span>
+                        </label>
+                        <label class="size-item">
+                            <input type="radio" name="size" value="xl" class="size-item-input">
+                            <span class="size-item-text">XL</span>
+                        </label>
+                        <label class="size-item">
+                            <input type="radio" name="size" value="xxl" class="size-item-input">
+                            <span class="size-item-text">XXL</span>
+                        </label>
+                    </div>
+                    <div class="card-colors">
+
+                    </div>
+                    <div class="card-price">
+                        <p class="old-price">4990руб</p>
+                        <p class="new-price">2990руб</p>
+                    </div>
+                    <button class="order-button">Заказать</button>
+                </div>
+            </div>
+        </template>
+        <template id="catalog-item-color">
+            <label class="color-item">
+                <input type="radio" name="color" value="#000" class="color-item-input">
+                <span class="color-item-bg"></span>
+            </label>
+        </template>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div>
+            <h2>Как заказать</h2>
+            <div class="black-line"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="how-to">
+            <div class="grey-line"></div>
+            <div class="how-to-step">
+                <div class="how-to-icon">
+                    <img src="images/newspaper.png" alt="">
+                </div>
+                <div class="grey-dot"></div>
+                <div class="hot-to-text">
+                    <p>Вы оформляете заказ на нашем сайте</p>
+                </div>
+            </div>
+            <div class="how-to-step">
+                <div class="how-to-icon">
+                    <img src="images/telemarketer.png" alt="">
+                </div>
+                <div class="grey-dot"></div>
+                <div class="hot-to-text">
+                    <p>Вы оформляете заказ на нашем сайте</p>
+                </div>
+            </div>
+            <div class="how-to-step">
+                <div class="how-to-icon">
+                    <img src="images/package.png" alt="">
+                </div>
+                <div class="grey-dot"></div>
+                <div class="hot-to-text">
+                    <p>Вы оформляете заказ на нашем сайте</p>
+                </div>
+            </div>
+            <div class="how-to-step">
+                <div class="how-to-icon">
+                    <img src="images/credit-card.png" alt="">
+                </div>
+                <div class="grey-dot"></div>
+                <div class="hot-to-text">
+                    <p>Вы оформляете заказ на нашем сайте</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal-container">
+    <div class="order-modal">
+        <img class="cancel-icon" src="images/cancel.png" alt="">
+        <div class="order-modal-image">
+            <img src="images/vladi.jpg" alt="">
+        </div>
+        <div class="order-modal-right">
+            <p class="order-name">Портупея "Влади"</p>
+            <div class="card-price">
+                <div class="old-price">4990руб</div>
+                <div class="new-price">2990руб</div>
+            </div>
+            <form class="order-modal-form">
+                <select title="size" name="order-size" class="order-size">
+                    <option value="xs">XS</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                    <option value="xxl">XXL</option>
+                </select>
+                <input type="text" placeholder="Введите ваше">
+                <input type="text" placeholder="Введите ваш телефон">
+                <button class="order-button">Оформить заказ</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
